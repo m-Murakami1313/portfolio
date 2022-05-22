@@ -1,7 +1,9 @@
+import { Top } from "./pages/Top/Top";
+
 function App() {
   return (
     <div className="App">
-      a
+      <Top/>
     </div>
   );
 }
