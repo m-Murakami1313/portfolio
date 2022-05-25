@@ -7,7 +7,7 @@ import styles from "./Works.module.scss";
 export const Works = () => {
   return (
     <div>
-      <h1 className={styles.h1}>Profile</h1>
+      <h1 className={styles.h1}>Works</h1>
       <div className={styles.container}>
         <Stack direction={{ xs: "column", sm: "row" }} className={styles.stack}>
           <img className={styles.img} src={imageUrl1} />
