@@ -1,0 +1,14 @@
+.h1 {
+  padding-left: 40px;
+}
+.container {
+  text-align: center;
+  .stack {
+    display: inline-block;
+    .img {
+      width: 400px;
+      height: 400px;
+      padding: 20px;
+    }
+  }
+}

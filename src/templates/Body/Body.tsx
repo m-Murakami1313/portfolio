@@ -1,7 +1,10 @@
-import React from 'react'
+import styles from "./Body.module.scss";
+import { Works } from "../../organisms/Works/Works";
 
 export const Body = () => {
   return (
-    <div>Body</div>
-  )
-}
+    <div className={styles.body}>
+      <Works />
+    </div>
+  );
+};
