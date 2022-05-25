@@ -2,13 +2,12 @@
   padding-left: 40px;
 }
 .container {
-  text-align: center;
   .stack {
-    display: inline-block;
-    .img {
-      width: 400px;
-      height: 400px;
-      padding: 20px;
+    align-items: center;
+    justify-content: center;
+    :hover {
+      transform: scale(1.01, 1.01);
+      cursor: pointer;
     }
   }
 }

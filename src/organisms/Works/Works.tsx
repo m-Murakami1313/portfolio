@@ -1,23 +1,38 @@
 import { Stack } from "@mui/material";
 
-
-import imageUrl1 from "../../images/和順商事株式会社.png";
+import { CardUI } from "../../UI/Card/CardUI";
 import styles from "./Works.module.scss";
+import image2 from "../../images/image2.jpg";
 
 export const Works = () => {
+  const firstContents = {
+    title: "a",
+    subheader: "b",
+    image: image2,
+    content: "content",
+  };
+
   return (
     <div>
       <h1 className={styles.h1}>Works</h1>
       <div className={styles.container}>
-        <Stack direction={{ xs: "column", sm: "row" }} className={styles.stack}>
-          <img className={styles.img} src={imageUrl1} />
-          <img className={styles.img} src={imageUrl1} />
-        </Stack>
-      </div>
-      <div className={styles.container}>
-        <Stack direction={{ xs: "column", sm: "row" }} className={styles.stack}>
-          <img className={styles.img} src={imageUrl1} />
-          <img className={styles.img} src={imageUrl1} />
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          className={styles.stack}
+          spacing={6}
+        >
+          <CardUI
+            title={firstContents.title}
+            subheader={firstContents.subheader}
+            image={firstContents.image}
+            content={firstContents.content}
+          />
+          <CardUI
+            title={firstContents.title}
+            subheader={firstContents.subheader}
+            image={firstContents.image}
+            content={firstContents.content}
+          />
         </Stack>
       </div>
     </div>
