@@ -10,6 +10,7 @@ export const Top = () => {
       <Container className={styles.top}>
         <Header />
         <Body />
+        <p>mailform</p>
       </Container>
   );
 };
