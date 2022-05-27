@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import { Button } from "@mui/material";
 import { Link as Scroll } from "react-scroll";
+import MenuIcon from "@mui/icons-material/Menu";
 
 import styles from "./Header.module.scss";
 import { useSize } from "../../hooks/UseSize";
@@ -17,12 +18,6 @@ export const Header = () => {
       <Box sx={{ flexGrow: 1 }} id="header" className={styles.box}>
         <AppBar position="fixed" className={styles.appbar} color="default">
           <Toolbar className={styles.toolBar}>
-            {/* <IconButton
-              size="large"
-              edge="start"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            ></IconButton> */}
             <Button size="large">
               <nav>
                 <Scroll to="header" smooth={true}>
@@ -56,7 +51,9 @@ export const Header = () => {
                 </Button>
               </div>
             ) : (
-              <p>1</p>
+              <IconButton color="inherit" className={styles.menu}>
+                <MenuIcon />
+              </IconButton>
             )}
           </Toolbar>
         </AppBar>
