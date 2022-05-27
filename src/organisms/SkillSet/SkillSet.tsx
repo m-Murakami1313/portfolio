@@ -2,8 +2,8 @@ import styles from "./SkillSet.module.scss";
 
 export const SkillSet = () => {
   return (
-    <div>
-      <h1 className={styles.h1}>SkillSets</h1>
+    <div id="skillSet">
+      <h1 className={styles.h1}>SkillSet</h1>
     </div>
   );
 };

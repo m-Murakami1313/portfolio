@@ -13,7 +13,7 @@ export const Works = () => {
   };
 
   return (
-    <div>
+    <div id="works">
       <h1 className={styles.h1}>Works</h1>
       <div className={styles.container}>
         <Stack

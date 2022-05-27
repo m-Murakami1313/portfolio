@@ -5,7 +5,7 @@ import image2 from "../../images/image2.jpg";
 
 export const Training = () => {
   return (
-    <div>
+    <div id="training">
       <h1 className={styles.h1}>Training</h1>
       <Stack
         direction={{ xs: "column", sm: "row" }}
