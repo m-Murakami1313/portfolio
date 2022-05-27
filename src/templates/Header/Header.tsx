@@ -1,3 +1,4 @@
+import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -9,50 +10,66 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import styles from "./Header.module.scss";
 import { useSize } from "../../hooks/UseSize";
+import { SideMenu } from "../../organisms/SideMenu/SideMenu";
 
 export const Header = () => {
+  const [open, setOpen] = useState(false);
+
   const { isMobileSize } = useSize();
+
+  const listArray = [
+    {
+      primary: "About",
+      link: "about",
+    },
+    {
+      primary: "Works",
+      link: "works",
+    },
+    {
+      primary: "Training",
+      link: "training",
+    },
+    {
+      primary: "SkillSet",
+      link: "skillSet",
+    },
+  ];
 
   return (
     <div className={styles.root}>
-      <Box sx={{ flexGrow: 1 }} id="header" className={styles.box}>
+      <Box sx={{ flexGrow: 1 }} id="top" className={styles.box}>
         <AppBar position="fixed" className={styles.appbar} color="default">
           <Toolbar className={styles.toolBar}>
             <Button size="large">
               <nav>
-                <Scroll to="header" smooth={true}>
-                  News
+                <Scroll to="top" smooth={true}>
+                  Mitsu's Portfolio
                 </Scroll>
               </nav>
             </Button>
             {isMobileSize ? (
               <div className={styles.buttonsContainer}>
-                <Button className={styles.button}>
-                  <nav>
-                    <Scroll to="about" smooth={true}>
-                      About
-                    </Scroll>
-                  </nav>
-                </Button>
-                <Button className={styles.button}>
-                  <Scroll to="works" smooth={true}>
-                    Works
-                  </Scroll>
-                </Button>
-                <Button className={styles.button}>
-                  <Scroll to="training" smooth={true}>
-                    Traning
-                  </Scroll>
-                </Button>
-                <Button className={styles.button}>
-                  <Scroll to="skillSet" smooth={true}>
-                    SkillSet
-                  </Scroll>
-                </Button>
+                {listArray.map((list: any) => (
+                  <Button className={styles.button} key={list.link}>
+                    <nav>
+                      <Scroll to={list.link} smooth={true}>
+                        {list.primary}
+                      </Scroll>
+                    </nav>
+                  </Button>
+                ))}
               </div>
             ) : (
-              <IconButton color="inherit" className={styles.menu}>
+              <IconButton
+                color="inherit"
+                className={styles.menu}
+                onClick={() => {
+                  setOpen(true);
+                }}
+              >
                 <MenuIcon />
+                <SideMenu open={open} setOpen={setOpen} />
               </IconButton>
             )}
           </Toolbar>
