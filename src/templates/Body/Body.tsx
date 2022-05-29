@@ -8,7 +8,7 @@ import { Container } from "@mui/system";
 export const Body = () => {
   return (
     <div className={styles.body}>
-      <Container>
+      <Container className={styles.container}>
         <About />
         <Works />
         <Training />
