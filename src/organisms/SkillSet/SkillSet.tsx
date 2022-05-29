@@ -1,4 +1,4 @@
-import { Chart } from "../../UI/Card/Chart/Chart";
+import { Chart } from "../../UI/Chart/Chart";
 import styles from "./SkillSet.module.scss";
 
 export const SkillSet = () => {
