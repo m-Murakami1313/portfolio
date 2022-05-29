@@ -13,6 +13,8 @@ export const Training = () => {
         spacing={6}
       >
         <img src={image2} className={styles.image}/>
+        <img src={image2} className={styles.image}/>
+        <img src={image2} className={styles.image}/>
       </Stack>
     </div>
   );
