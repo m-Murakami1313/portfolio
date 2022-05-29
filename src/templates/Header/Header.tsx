@@ -25,7 +25,6 @@ export const Header = () => {
     {
       primary: "Works",
       link: "works",
-      offset:-100,
     },
     {
       primary: "Training",
@@ -54,7 +53,7 @@ export const Header = () => {
                 {listArray.map((list: any) => (
                   <Button className={styles.button} key={list.link}>
                     <nav>
-                      <Scroll to={list.link} smooth={true} offset={list.offset}>
+                      <Scroll to={list.link} smooth={true} >
                         {list.primary}
                       </Scroll>
                     </nav>

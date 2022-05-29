@@ -21,7 +21,6 @@ export const SideMenu = memo(({ setOpen, open }: any) => {
     {
       primary: "Works",
       link: "works",
-      offset:-100,
     },
     {
       primary: "Training",
@@ -53,7 +52,6 @@ export const SideMenu = memo(({ setOpen, open }: any) => {
                     onClick={() => {
                       setOpen(false);
                     }}
-                    offset={list.offset}
                   >
                     <ListItemText
                       primary={list.primary}
