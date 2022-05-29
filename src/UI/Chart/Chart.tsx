@@ -1,59 +1,40 @@
 import {
   BarChart,
   Bar,
-  Cell,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
-  Legend,
+  LabelList,
   ResponsiveContainer,
 } from "recharts";
 
 import styles from "./Chart.module.scss";
 
-const data = [
+const dataSet = [
   {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    name: "Html,CSS",
+    skill: 20,
+    fill: "#BAD3FF",
   },
   {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    name: "React",
+    skill: 50,
+    fill: "#A4C6FF",
   },
   {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    name: "Typescript",
+    skill: 10,
+    fill: "#8EB8FF",
   },
   {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    name: "Node.js",
+    skill: 5,
+    fill: "#75A9FF",
   },
   {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: "MySQL",
+    skill: 5,
+    fill: "#5D99FF",
   },
 ];
 
@@ -61,12 +42,22 @@ export const Chart = () => {
   return (
     <div className={styles.chart}>
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart width={400} height={200} layout="vertical" data={data}>
-          <XAxis type="number" />
+        <BarChart
+          width={400}
+          height={200}
+          layout="vertical"
+          data={dataSet}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 30,
+            bottom: 5,
+          }}
+        >
+          <XAxis type="number" unit="%" domain={[0, 100]} />
           <YAxis dataKey="name" type="category" />
-          <Bar dataKey="pv" fill="#8884d8" />
-          <Bar dataKey="uv" fill="#82ca9d" />
-          <Bar dataKey="amt" fill="#74ca1d" />
+          <Bar dataKey="skill" />
+          <Tooltip />
         </BarChart>
       </ResponsiveContainer>
     </div>
