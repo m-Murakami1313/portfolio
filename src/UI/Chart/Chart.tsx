@@ -1,64 +1,68 @@
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  Tooltip,
-  LabelList,
-  ResponsiveContainer,
-} from "recharts";
+import { PieChart, Pie, Text, ResponsiveContainer } from "recharts";
 
 import styles from "./Chart.module.scss";
 
 const dataSet = [
   {
     name: "Html,CSS",
-    skill: 20,
+    value: 20,
     fill: "#BAD3FF",
   },
   {
     name: "React",
-    skill: 50,
+    value: 50,
     fill: "#A4C6FF",
   },
   {
     name: "Typescript",
-    skill: 10,
+    value: 10,
     fill: "#8EB8FF",
   },
   {
     name: "Node.js",
-    skill: 5,
+    value: 5,
     fill: "#75A9FF",
   },
   {
     name: "MySQL",
-    skill: 5,
+    value: 5,
     fill: "#5D99FF",
   },
 ];
 
 export const Chart = () => {
+  const label = ({ name, value, cx, x, y }: any) => {
+    const textAnchor = x > cx ? "start" : "end";
+    return (
+      <>
+        <Text x={x} y={y} textAnchor={textAnchor} fill="black">
+          {name}
+        </Text>
+        <Text
+          x={x}
+          y={y}
+          dominantBaseline="hanging"
+          textAnchor={textAnchor}
+          fill="black"
+        >
+          {value}
+        </Text>
+      </>
+    );
+  };
   return (
     <div className={styles.chart}>
       <ResponsiveContainer width="100%" height="100%">
-        <BarChart
-          width={400}
-          height={200}
-          layout="vertical"
-          data={dataSet}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 30,
-            bottom: 5,
-          }}
-        >
-          <XAxis type="number" unit="%" domain={[0, 100]} />
-          <YAxis dataKey="name" type="category" />
-          <Bar dataKey="skill" />
-          <Tooltip />
-        </BarChart>
+        <PieChart width={730} height={250}>
+          <Pie
+            data={dataSet}
+            dataKey="value"
+            cx="50%"
+            cy="50%"
+            outerRadius={100}
+            label={label}
+          />
+        </PieChart>
       </ResponsiveContainer>
     </div>
   );
