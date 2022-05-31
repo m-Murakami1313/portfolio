@@ -1,4 +1,4 @@
-import { Stack } from "@mui/material";
+import { Grid } from "@mui/material";
 
 import { CardUI } from "../../UI/Card/CardUI";
 import styles from "./Works.module.scss";
@@ -15,26 +15,29 @@ export const Works = () => {
   return (
     <div id="works">
       <h1 className={styles.h1}>Works</h1>
-      <div className={styles.container}>
-        <Stack
-          direction={{ xs: "column", sm: "row" }}
-          className={styles.stack}
-          spacing={6}
-        >
+      <Grid
+        container
+        className={styles.container}
+        spacing={6}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+      >
+        <Grid item>
           <CardUI
             title={firstContents.title}
             subheader={firstContents.subheader}
             image={firstContents.image}
             content={firstContents.content}
           />
+        </Grid>
+        <Grid item>
           <CardUI
             title={firstContents.title}
             subheader={firstContents.subheader}
             image={firstContents.image}
             content={firstContents.content}
           />
-        </Stack>
-      </div>
+        </Grid>
+      </Grid>
     </div>
   );
 };
