@@ -21,7 +21,7 @@ export const Works = () => {
         spacing={6}
         columns={{ xs: 4, sm: 8, md: 12 }}
       >
-        <Grid item>
+        <Grid item className={styles.item}>
           <CardUI
             title={firstContents.title}
             subheader={firstContents.subheader}
@@ -29,7 +29,7 @@ export const Works = () => {
             content={firstContents.content}
           />
         </Grid>
-        <Grid item>
+        <Grid item className={styles.item}>
           <CardUI
             title={firstContents.title}
             subheader={firstContents.subheader}
