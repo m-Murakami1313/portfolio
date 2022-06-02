@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 
 import { CardUI } from "../../UI/Card/CardUI";
 import { Chart } from "../../UI/Chart/Chart";
@@ -13,24 +13,34 @@ export const SkillSet = () => {
 
   return (
     <div id="skillSet">
-      <h1 className={styles.h1}>SkillSet</h1>
-      <Chart />
-      <Box  className={styles.container}>
-        <Box  className={styles.item}>
+      <div className={styles.heading}>
+        <h1 className={styles.h1}>SkillSet</h1>
+        <h2 className={styles.h2}>- 現在使用出来るスキル</h2>
+      </div>
+      {/* <Grid container>
+        <Grid item>
+          <Chart />
+        </Grid>
+        <Grid item>
+          <Box className={styles.sentence}>a</Box>
+        </Grid>
+      </Grid> */}
+      <Box className={styles.container}>
+        <Box className={styles.item}>
           <CardUI
             title={firstContents.title}
             subheader={firstContents.subheader}
             content={firstContents.content}
           />
         </Box>
-        <Box  className={styles.item}>
+        <Box className={styles.item}>
           <CardUI
             title={firstContents.title}
             subheader={firstContents.subheader}
             content={firstContents.content}
           />
         </Box>
-        <Box  className={styles.item}>
+        <Box className={styles.item}>
           <CardUI
             title={firstContents.title}
             subheader={firstContents.subheader}

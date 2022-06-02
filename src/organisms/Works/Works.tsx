@@ -14,7 +14,10 @@ export const Works = () => {
 
   return (
     <div id="works">
-      <h1 className={styles.h1}>Works</h1>
+      <div className={styles.heading}>
+        <h1 className={styles.h1}>Works</h1>
+        <h2 className={styles.h2}>- 作成した作品達</h2>
+      </div>
       <Grid
         container
         className={styles.container}
