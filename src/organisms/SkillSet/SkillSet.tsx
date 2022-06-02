@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Box } from "@mui/material";
 
 import { CardUI } from "../../UI/Card/CardUI";
 import { Chart } from "../../UI/Chart/Chart";
@@ -15,29 +15,29 @@ export const SkillSet = () => {
     <div id="skillSet">
       <h1 className={styles.h1}>SkillSet</h1>
       <Chart />
-      <Grid container spacing={4} columns={{ xs: 4, sm: 8, md: 12 }}>
-        <Grid item className={styles.item}>
+      <Box  className={styles.container}>
+        <Box  className={styles.item}>
           <CardUI
             title={firstContents.title}
             subheader={firstContents.subheader}
             content={firstContents.content}
           />
-        </Grid>
-        <Grid item className={styles.item}>
+        </Box>
+        <Box  className={styles.item}>
           <CardUI
             title={firstContents.title}
             subheader={firstContents.subheader}
             content={firstContents.content}
           />
-        </Grid>
-        <Grid item className={styles.item}>
+        </Box>
+        <Box  className={styles.item}>
           <CardUI
             title={firstContents.title}
             subheader={firstContents.subheader}
             content={firstContents.content}
           />
-        </Grid>
-      </Grid>
+        </Box>
+      </Box>
     </div>
   );
 };

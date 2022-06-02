@@ -5,7 +5,11 @@
   text-decoration: underline;
 }
 .container {
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  grid-gap: 3rem;
+
   .image {
     width: 200px;
     height: 200px;
