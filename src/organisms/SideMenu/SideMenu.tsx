@@ -11,8 +11,8 @@ import styles from "./SideMenu.module.scss";
 export const SideMenu = memo(({ setOpen, open }: any) => {
   const listArray = [
     {
-      primary: "Top",
-      link: "top",
+      primary: "Home",
+      link: "home",
     },
     {
       primary: "About",
