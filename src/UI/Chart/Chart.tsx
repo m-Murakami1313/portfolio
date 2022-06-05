@@ -4,29 +4,29 @@ import styles from "./Chart.module.scss";
 
 const dataSet = [
   {
-    name: "Html,CSS",
-    value: 20,
-    fill: "#BAD3FF",
-  },
-  {
-    name: "React",
-    value: 50,
-    fill: "#A4C6FF",
-  },
-  {
     name: "Typescript",
     value: 10,
     fill: "#8EB8FF",
   },
   {
+    name: "Html/CSS",
+    value: 20,
+    fill: "#75A9FF",
+  },
+  {
+    name: "React",
+    value: 50,
+    fill: "#5D99FF",
+  },
+  {
     name: "Node.js",
     value: 5,
-    fill: "#75A9FF",
+    fill: "#A4C6FF",
   },
   {
     name: "MySQL",
     value: 5,
-    fill: "#5D99FF",
+    fill: "#BAD3FF",
   },
 ];
 
@@ -45,7 +45,7 @@ export const Chart = () => {
           textAnchor={textAnchor}
           fill="black"
         >
-          {value}
+          {value + "%"}
         </Text>
       </>
     );
