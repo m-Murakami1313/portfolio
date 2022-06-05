@@ -43,7 +43,7 @@ export const Header = () => {
           <Toolbar className={styles.toolBar}>
             <Button size="large">
               <nav>
-                <Scroll to="top" smooth={true}>
+                <Scroll to="home" smooth={true}>
                   Mitsu's Portfolio
                 </Scroll>
               </nav>
