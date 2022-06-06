@@ -11,7 +11,9 @@ export const CardUI = ({ title, subheader, image, content }: any) => {
   return (
     <Card className={styles.card}>
       <CardHeader title={title} subheader={subheader} />
-      <CardMedia className={styles.media} title="refrigerator" image={image} />
+      <div className={styles.media} >
+        <CardMedia  className={styles.mediaItem} image={image} />
+      </div>
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           {content}

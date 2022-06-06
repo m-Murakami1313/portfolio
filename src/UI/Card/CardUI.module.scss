@@ -3,6 +3,12 @@
   height: 100%;
 
   .media {
-    height: 50%;
+    height:50%;
+    width: 51%;
+    margin: 0 auto;
+    .mediaItem {
+      height:100%;
+      width: auto;
+    }
   }
 }
