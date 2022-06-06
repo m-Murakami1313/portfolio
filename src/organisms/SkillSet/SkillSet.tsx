@@ -14,27 +14,29 @@ export const SkillSet = () => {
     {
       title: "HTML/CSS",
       image: htmlLogo,
-      content: "content",
+      content: "一通りのコードは書け、cssを当てられる",
     },
     {
       title: "React",
       image: reactLogo,
-      content: "content",
+      content:
+        "基本的なhooks、カスタムフックを使用出来る。可読性が高いコードが書けるように日々勉強中。",
     },
     {
       title: "TypeScript",
       image: tsLogo,
-      content: "content",
+      content: "基本的な型を当てることが出来る。主にtypeを使用している。",
     },
     {
       title: "Node.js",
       image: nodejsLogo,
-      content: "content",
+      content: "簡単なCRUD操作が出来る。まだまだ勉強を始めたばかり。",
     },
     {
       title: "MySQL",
       image: mysqlLogo,
-      content: "content",
+      content:
+        "学習サイト「SQL Bolt」にてSQL構文は書けるようになった。現在はDB設計を勉強中。",
     },
   ];
 
