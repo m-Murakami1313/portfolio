@@ -18,18 +18,42 @@
   }
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, 300px);
     justify-content: center;
     grid-gap: 3rem;
 
-    .image {
-      width: 200px;
-      height: 200px;
-      border-radius: 50px;
-    }
-    :hover {
-      transform: scale(1.01, 1.01);
-      cursor: pointer;
+    .imageBox {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      .image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+      }
+      .imageText {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        top: 0;
+        left: 0;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.65);
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        .title {
+          text-align: center;
+        }
+        .contents {
+          position: absolute;
+          bottom: 1%;
+          padding: 2%;
+        }
+      }
+      :hover {
+        opacity: 1;
+      }
     }
   }
 }

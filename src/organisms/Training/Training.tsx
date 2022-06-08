@@ -13,22 +13,41 @@ export const Training = () => {
           <h2 className={styles.h2}>- 勉強で作成した作品</h2>
         </div>
         <Box className={styles.container}>
-          <Box>
-            <a href="">
-              <img src={image2} className={styles.image} />
-            </a>
-          </Box>
-          <Box>
+          <Box className={styles.imageBox}>
+            {/* <a href=""> */}
             <img src={image2} className={styles.image} />
+            <div className={styles.imageText}>
+              <p className={styles.title}>人口</p>
+              <div className={styles.contents}>
+                <p>外部APIからデータを取得し、折れ線グラフを表示する</p>
+                <p>使用言語 React/Typescript</p>
+              </div>
+            </div>
+            {/* </a> */}
           </Box>
-          <Box>
+          <Box className={styles.imageBox}>
+            {/* <a href=""> */}
             <img src={image2} className={styles.image} />
+            <div className={styles.imageText}>
+              <p className={styles.title}>人口</p>
+              <div className={styles.contents}>
+                <p>外部APIからデータを取得し、折れ線グラフを表示する</p>
+                <p>使用言語 React/Typescript</p>
+              </div>
+            </div>
+            {/* </a> */}
           </Box>
-          <Box>
+          <Box className={styles.imageBox}>
+            {/* <a href=""> */}
             <img src={image2} className={styles.image} />
-          </Box>
-          <Box>
-            <img src={image2} className={styles.image} />
+            <div className={styles.imageText}>
+              <p className={styles.title}>人口</p>
+              <div className={styles.contents}>
+                <p>外部APIからデータを取得し、折れ線グラフを表示する</p>
+                <p>使用言語 React/Typescript</p>
+              </div>
+            </div>
+            {/* </a> */}
           </Box>
         </Box>
       </Container>
