@@ -2,14 +2,13 @@ import { Grid } from "@mui/material";
 
 import { CardUI } from "../../UI/Card/CardUI";
 import styles from "./Works.module.scss";
-import image2 from "../../images/image2.jpg";
+import portfolioImage from "../../images/portfolio.png";
 import { Container } from "@mui/system";
 
 export const Works = () => {
   const firstContents = {
-    title: "a",
-    subheader: "b",
-    image: image2,
+    title: "ポートフォリオ",
+    image: portfolioImage,
     content: "content",
   };
 
@@ -29,7 +28,6 @@ export const Works = () => {
           <Grid item className={styles.item}>
             <CardUI
               title={firstContents.title}
-              subheader={firstContents.subheader}
               image={firstContents.image}
               content={firstContents.content}
             />
@@ -37,7 +35,6 @@ export const Works = () => {
           <Grid item className={styles.item}>
             <CardUI
               title={firstContents.title}
-              subheader={firstContents.subheader}
               image={firstContents.image}
               content={firstContents.content}
             />
