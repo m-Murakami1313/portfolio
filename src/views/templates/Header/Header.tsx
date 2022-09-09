@@ -9,7 +9,7 @@ import { Link as Scroll } from "react-scroll";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import styles from "./Header.module.scss";
-import { useSize } from "../../hooks/UseSize";
+import { useSize } from "../../../hooks/UseSize";
 import { SideMenu } from "../../organisms/SideMenu/SideMenu";
 
 export const Header = () => {

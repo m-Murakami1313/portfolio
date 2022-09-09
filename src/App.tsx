@@ -1,4 +1,4 @@
-import { Top } from "./pages/Top/Top";
+import { Top } from "./views/pages/Top/Top";
 
 function App() {
   return (
