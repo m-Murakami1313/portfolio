@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage":"https://m-murakami1313.github.io/portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
