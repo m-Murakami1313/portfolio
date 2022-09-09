@@ -1,18 +1,11 @@
 import { Grid } from "@mui/material";
+import { Container } from "@mui/system";
 
 import { CardUI } from "../../UI/Card/CardUI";
 import styles from "./Works.module.scss";
-import portfolioImage from "../../../images/portfolio.png";
-import { Container } from "@mui/system";
+import { worksContents } from "../../../libs/worksContents";
 
 export const Works = () => {
-  const firstContents = {
-    title: "ポートフォリオ",
-    image: portfolioImage,
-    content: "content",
-    url: "https://m-murakami1313.github.io/portfolio/",
-  };
-
   return (
     <div id="works" className={styles.back}>
       <Container>
@@ -26,22 +19,18 @@ export const Works = () => {
           spacing={6}
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
-          <Grid item className={styles.item}>
-            <a href={firstContents.url}>
-              <CardUI
-                title={firstContents.title}
-                image={firstContents.image}
-                content={firstContents.content}
-              />
-            </a>
-          </Grid>
-          <Grid item className={styles.item}>
-            <CardUI
-              title={firstContents.title}
-              image={firstContents.image}
-              content={firstContents.content}
-            />
-          </Grid>
+          {worksContents.map((content) => (
+            <Grid item className={styles.item}>
+              <a href={content.url}>
+                <CardUI
+                  title={content.title}
+                  image={content.image}
+                  content={content.content}
+                  deploy={content.deploy}
+                />
+              </a>
+            </Grid>
+          ))}
         </Grid>
       </Container>
     </div>
