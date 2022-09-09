@@ -6,8 +6,6 @@ import styles from "./SkillSet.module.scss";
 import { skills } from "../../../libs/skillsData";
 
 export const SkillSet = () => {
-
-
   return (
     <div id="skillSet" className={styles.back}>
       <Container>
