@@ -7,7 +7,15 @@ import {
 } from "@mui/material";
 import styles from "./CardUI.module.scss";
 
-export const CardUI = ({ title, subheader, image, deploy,content }: any) => {
+type Props = {
+  title:string,
+  subheader?:string,
+  image:string,
+  deploy?:string,
+  content:string
+}
+
+export const CardUI = ({ title, subheader, image, deploy,content }: Props) => {
   return (
     <Card className={styles.card}>
       <CardHeader title={title} subheader={subheader} />
