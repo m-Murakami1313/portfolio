@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 
 import { CardUI } from "../../UI/Card/CardUI";
 import styles from "./Works.module.scss";
-import portfolioImage from "../../images/portfolio.png";
+import portfolioImage from "../../../images/portfolio.png";
 import { Container } from "@mui/system";
 
 export const Works = () => {
@@ -10,6 +10,7 @@ export const Works = () => {
     title: "ポートフォリオ",
     image: portfolioImage,
     content: "content",
+    url: "https://m-murakami1313.github.io/portfolio/",
   };
 
   return (
@@ -26,11 +27,13 @@ export const Works = () => {
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
           <Grid item className={styles.item}>
-            <CardUI
-              title={firstContents.title}
-              image={firstContents.image}
-              content={firstContents.content}
-            />
+            <a href={firstContents.url}>
+              <CardUI
+                title={firstContents.title}
+                image={firstContents.image}
+                content={firstContents.content}
+              />
+            </a>
           </Grid>
           <Grid item className={styles.item}>
             <CardUI

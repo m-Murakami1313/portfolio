@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
 import styles from "./Training.module.scss";
-
-import covidImage from "../../images/covidtracker.png";
-import prefecturesImage from "../../images/prefecturesChart.png";
-import movieListImage from "../../images/movieList.png";
 import { Container } from "@mui/system";
+
+import covidImage from "../../../images/covidtracker.png";
+import prefecturesImage from "../../../images/prefecturesChart.png";
+import movieListImage from "../../../images/movieList.png";
 
 export const Training = () => {
   const trainingList = [

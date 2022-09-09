@@ -1,8 +1,8 @@
-import htmlLogo from "../../images/HTML5_Logo_128.png";
-import tsLogo from "../../images/ts-logo-128.png";
-import reactLogo from "../../images/react-2.png";
-import nodejsLogo from "../../images/MiConv.com__nodejs-new-pantone-black.png";
-import mysqlLogo from "../../images/mysql.png";
+import htmlLogo from "../images/HTML5_Logo_128.png";
+import tsLogo from "../images/ts-logo-128.png";
+import reactLogo from "../images/react-2.png";
+import nodejsLogo from "../images/MiConv.com__nodejs-new-pantone-black.png";
+import mysqlLogo from "../images/mysql.png";
 
 export const skills = [
     {
