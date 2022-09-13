@@ -1,6 +1,7 @@
 import { Box, Container } from "@mui/system";
 
 import styles from "./About.module.scss";
+import GitHubImage from "../../../images/GitHub-Mark-64px.png";
 
 export const About = () => {
   return (
@@ -9,6 +10,9 @@ export const About = () => {
         <div className={styles.heading}>
           <h1 className={styles.h1}>About</h1>
           <h2 className={styles.h2}>- 自己紹介</h2>
+          <a href="https://github.com/m-Murakami1313" >
+            <img className={styles.github} src={GitHubImage} alt="GitHub" />
+          </a>
         </div>
         <Box className={styles.about}>
           <article>
@@ -22,8 +26,7 @@ export const About = () => {
               コードを書く楽しさ、プログラミングの出来ることの多さからそのままプログラミングにハマり、学習を継続
             </p>
             <p>
-              モダンなフロントエンド開発ができるエンジニアを目指し
-              日々勉強中
+              モダンなフロントエンド開発ができるエンジニアを目指し 日々勉強中
             </p>
           </article>
         </Box>
