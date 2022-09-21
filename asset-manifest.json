@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a283ee86.css",
-    "main.js": "/portfolio/static/js/main.fa587531.js",
+    "main.js": "/portfolio/static/js/main.4dae987a.js",
     "static/media/movieList.png": "/portfolio/static/media/movieList.d8537fd14ef8c193f9f0.png",
+    "static/media/prefecturesChart.png": "/portfolio/static/media/prefecturesChart.157e9ecf89467bf8819c.png",
     "static/media/react-2.png": "/portfolio/static/media/react-2.cc934342001f70493aa6.png",
     "static/media/DockerLogo.png": "/portfolio/static/media/DockerLogo.ebbf89414b529a4d6743.png",
     "static/media/recipeList.png": "/portfolio/static/media/recipeList.3a3bf05a7ef903ef5a69.png",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.4697f9509143e43cca93.png",
-    "static/media/prefecturesChart.png": "/portfolio/static/media/prefecturesChart.312911d98733bcaa8477.png",
     "static/media/mysql.png": "/portfolio/static/media/mysql.30b67de8d8628c3ea33a.png",
     "static/media/nextjs-icon-light-background.png": "/portfolio/static/media/nextjs-icon-light-background.ea138a04fc5bdbb26efc.png",
     "static/media/covidtracker.png": "/portfolio/static/media/covidtracker.d19ec1905cf845022408.png",
@@ -15,10 +15,10 @@
     "static/media/tailwindcsslogo.svg": "/portfolio/static/media/tailwindcsslogo.943b88c2b90c001d7de9bcaefe4ec1ac.svg",
     "index.html": "/portfolio/index.html",
     "main.a283ee86.css.map": "/portfolio/static/css/main.a283ee86.css.map",
-    "main.fa587531.js.map": "/portfolio/static/js/main.fa587531.js.map"
+    "main.4dae987a.js.map": "/portfolio/static/js/main.4dae987a.js.map"
   },
   "entrypoints": [
     "static/css/main.a283ee86.css",
-    "static/js/main.fa587531.js"
+    "static/js/main.4dae987a.js"
   ]
 }
