@@ -5,7 +5,6 @@ import { Container } from "@mui/system";
 import { trainingList } from "../../../libs/traningsContents";
 
 export const Training = () => {
-
   return (
     <div id="training" className={styles.back}>
       <Container>
@@ -17,7 +16,11 @@ export const Training = () => {
           {trainingList.map((list) => (
             <Box className={styles.imageBox}>
               <a href={list.url}>
-                <img src={list.imgsrc} className={styles.image} />
+                <img
+                  src={list.imgsrc}
+                  alt={list.alt}
+                  className={styles.image}
+                />
                 <div className={styles.imageText}>
                   <p className={styles.title}>{list.title}</p>
                   <div className={styles.contents}>
